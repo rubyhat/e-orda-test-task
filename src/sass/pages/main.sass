@@ -37,15 +37,34 @@
 .main-header
 	padding: 33px 0
 
+.main-header__content
+	width: 100%
+
 .main-header__logo
 	margin-right: 70px
 
 .main-header__list
 	width: 100%
 
+.main-header__burger
+	display: none
+
+.main-header__burger_line_1, .main-header__burger_line_2, .main-header__burger_line_3
+	width: 17px
+	height: 2px
+	background-color: #000
+
+.main-header__burger_line_2
+	margin: 4px 0
+
+.main-header__links
+	li
+		&:last-child
+			min-width: 169px
+
 .main-header__link
 	color: #000000
-	font-size: 16
+	font-size: 16px
 	font-weight: 500
 	&:hover
 		color: #000000
@@ -96,10 +115,3 @@
 	color: #0097A0
 	font-size: 14px
 	text-align: center
-
-
-
-@media screen and (max-width: 768px)
-	.one
-		background-color: tomato
-	

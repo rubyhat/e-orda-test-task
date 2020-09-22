@@ -1,0 +1,168 @@
+@media screen and (max-width: 1200px)
+  // Header
+  .sub-header__time-show
+    flex-direction: column
+  .sub-header__link
+    padding: 0 8px
+  .sub-header__link_city
+    line-height: inherit
+  .sub-header__city-select
+    display: flex
+  .main-header__logo
+    margin-right: 2%
+
+  // Hero cards
+  .hero-cards
+    left: 50%
+    transform: translateX(-50%)
+
+  // About
+  .about
+    background-size: contain
+    min-height: 90vh
+  .about__body
+    position: absolute
+    top: 26rem
+    left: 1.5rem
+    padding: 0
+    // padding-top: 26rem
+    // padding-left: 0
+    z-index: 10
+  .about__btn
+    margin-top: 30px
+
+@media screen and (max-width: 992px)
+  // Header
+  .sub-header__time-show, .sub-header__city-select, .main-header__list
+    display: none!important
+  .main-header
+    padding: 16px 0
+  .main-header__burger
+    display: block
+    cursor: pointer
+  .main-header__content
+    justify-content: space-between
+  // Hero
+  .hero-title__main
+    font-size: 28px
+    max-width: 340px
+
+@media screen and (max-width: 768px)
+  // Hero
+  .hero
+    background-position: top
+    background-size: 50%
+  .hero-title
+    padding-top: 270px
+    width: 100%
+  .hero-title__btn
+    width: 100%
+    max-width: 100%
+    justify-content: center
+    margin-bottom: 40px
+  .hero-cards
+    position: static
+    transform: none
+    flex-direction: column
+  .hero-card
+    width: 100%
+    max-width: 100%
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 40px
+  .hero-card__img
+    width: 100%
+  .hero-card__title
+    margin-top: 20px
+  
+  // About
+  .about
+    background-image: url(../img/about/screen-mobile-retina.png)
+    background-size: 70%
+    background-position: top
+  .about__body
+    position: static
+    padding-top: 24rem
+  .about__btn
+    max-width: 100%
+
+  // Services
+  .services__main
+    justify-content: flex-start!important
+  .services__title-block, .services__subtitle
+    text-align: left
+    margin-bottom: 0
+  .services__content
+    display: none!important
+  .services__content-mobile
+    display: block
+    .services__item
+      font-size: 14px
+      font-weight: 500
+      color: #5C5C5C
+      margin-top: 15px
+      img
+        margin-right: 10px
+  .services__btn
+    width: 100%
+    max-width: 100%
+    position: static
+    margin-top: 20px
+    font-size: 16px
+  
+  // Organizations
+  .organizations__title
+    font-size: 24px
+  .organizations__info
+    font-size: 16px
+  .organizations__btn
+    width: 100%
+    max-width: 100%
+
+@media screen and (max-width: 650px)
+  // Faq
+  .faq
+    background-image: url(../img/bg-decor/faq/cloud-1.svg), url(../img/bg-decor/faq/cloud-2.svg), url(../img/bg-decor/faq/airplane.svg)
+    background-position: 25% 10%, 76% 25%, 100% 100%
+  .faq__title
+    text-align: center
+    font-weight: 700
+    font-size: 24px
+  .faq__item
+    padding: 20px 0
+    padding-left: 0
+    font-size: 18px
+    font-weight: 500
+  // Footer
+  .footer__title
+    font-size: 24px
+  .footer__links
+    flex-direction: column
+  .footer__link
+    width: 100%
+    margin-bottom: 20px
+    justify-content: center
+    &:last-child
+      margin-bottom: 0
+
+@media screen and (max-width: 415px)
+  // Header
+  .info
+    margin: 0 auto
+  .info-list__item
+    &:after
+      top: 20px
+  .sub-header__lang-select
+    width: 100%
+    justify-content: center
+  .sub-header__link, .info-list__item
+    line-height: 45px
+  //about
+  .about
+    margin-top: 40px
+    padding-bottom: 40px
+    min-height: inherit
+  .about__body
+    padding-top: 14rem
+  .services_bg-decor_right, .services_bg-decor_left
+    display: none
