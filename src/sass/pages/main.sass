@@ -1,17 +1,103 @@
-.one, .two
-	display: flex
+// Header
+// Sub-header
+.sub-header
+	background-color: $accent
+	color: #ffffff
+	font-size: 16px
 
-.one
-	background-color: lightgreen
-	align-items: center
-	justify-content: center
-	min-height: 1000px
+.info-list__item
+	position: relative
+	cursor: pointer
+	line-height: 70px
+	padding-left: 16px
+	padding-right: 28px
+	&:after
+		content: ''
+		position: absolute
+		top: 30px
+		margin-left: 8px
+		border: 6px solid transparent
+		border-top: 6px solid #fff
+	transition: all 300ms
+	&:hover
+		background-color: $accent_active
 
-.two
-	background-color: lightblue
-	align-items: center
-	justify-content: space-around
-	min-height: 1000px
+.sub-header__link
+	display: block
+	line-height: 70px
+	padding: 0 16px
+	transition: all 300ms
+	&:hover
+		background-color: $accent_active
+	
+.sub-header__link_city
+	padding-left: 4px
+
+// Main-header
+.main-header
+	padding: 33px 0
+
+.main-header__logo
+	margin-right: 70px
+
+.main-header__list
+	width: 100%
+
+.main-header__link
+	color: #000000
+	font-size: 16
+	font-weight: 500
+	&:hover
+		color: #000000
+
+.main-header__link_btn
+	padding: 10px 22px
+	background-color: #239F8B
+	transition: all 300ms
+	color: #fff
+	border-radius: 5px
+	&:hover
+		background-color: #B44466
+		color: #fff
+
+
+// Footer
+.footer
+	padding: 80px 0
+
+.footer__title
+	font-weight: 700
+	font-size: 36px
+	color: #333333
+	text-align: center
+
+.footer__links
+	padding-top: 30px
+	padding-bottom: 50px
+
+.footer__link
+	background-color: #12D9B8
+	font-weight: 700
+	padding: 26px 74px
+	margin-right: 30px
+	border-radius: 10px
+	transition: all 300ms
+	&:hover
+		color: #ffffff
+		box-shadow: 0 4px 12px rgba(0,0,0,.25)
+	&:last-child
+		margin-right: 0
+
+
+.footer__link-icon
+	margin-right: 20px
+
+.footer__copy
+	color: #0097A0
+	font-size: 14px
+	text-align: center
+
+
 
 @media screen and (max-width: 768px)
 	.one

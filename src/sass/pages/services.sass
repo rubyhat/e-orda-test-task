@@ -1,0 +1,85 @@
+// Services
+.services
+  padding: 40px 0
+  background-color: #E5F7F9
+  position: relative
+  // height: 70vh
+  &:after
+    content: ''
+    background: url('../img/services/services-top-line.svg') repeat-x
+    display: block
+    width: 100%
+    position: absolute
+    height: 16px
+    top: -16px
+    z-index: 10
+  &:before
+    content: ''
+    background: url('../img/services/services-bottom-line.svg') repeat-x
+    display: block
+    width: 100%
+    height: 16px
+    position: absolute
+    bottom: -16px
+    z-index: 10
+
+.services_bg-decor_right
+  background-image: url(../img/bg-decor/services/right-tree.svg)
+  background-size: 100%
+  background-repeat: no-repeat
+  position: absolute
+  right: 0
+  top: -7%
+  width: 50px
+  height: 200px
+  z-index: 12
+
+.services_bg-decor_left
+  background-image: url(../img/bg-decor/services/left-tree.svg)
+  background-size: 100%
+  background-repeat: no-repeat
+  position: absolute
+  left: 0
+  bottom: -20%
+  width: 140px
+  height: 220px
+  z-index: 12
+
+
+.services__content
+  background-image: url(../img/services/services.png)
+  background-position: center
+  background-repeat: no-repeat
+  padding: 40px 0
+
+.services__title-block
+  margin-bottom: 30px
+
+.services__item
+  font-size: 14px
+  font-weight: 500
+  color: #5c5c5c
+  display: flex
+  align-items: center
+  margin-top: 30px
+
+.services__left-block
+  .services__item
+    justify-content: flex-end
+  .services__text
+    margin-right: 15px
+    text-align: right
+
+.services__right-block
+  .services__text
+    margin-left: 15px
+  
+.services__subtitle
+  text-align: center
+
+.services__btn
+  position: absolute
+  z-index: 11
+  bottom: -130px
+  display: block
+  max-width: 250px
